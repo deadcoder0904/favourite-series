@@ -6,7 +6,7 @@
   "scripts": {
     "build": "browserify js/app.js -t babelify -o js/app.dist.js",
     "watch": "watchify js/app.js -t babelify -o js/app.dist.js",
-    "start": "google-chrome index.html"
+    "start": "yarn build"
   },
   "author": "Akshay Kadam <akshaykadam0904@gmail.com> (http://deadcoder0904.github.io/)",
   "license": "MIT",
