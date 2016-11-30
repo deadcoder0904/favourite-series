@@ -30,8 +30,9 @@ module.exports={
 							"How to get away with murder",
 							"Stranger Things",
 							"Quantico",
-							"Friends",
+							"Narcos",
 							"Silicon Valley",
+							"Friends",
 						]
 }
 
