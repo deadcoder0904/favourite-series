@@ -5,9 +5,9 @@ $(document).ready(() => {
 	let arr = [];
 	let i = 0;
 	while (i < series.length) {
-		$.getJSON("http://www.omdbapi.com/?t=" + series[i].toLowerCase() + "&y=&plot=short&r=json", data => {
+		const poster = series[i].poster;
+		$.getJSON("http://www.omdbapi.com/?t=" + series[i].name.toLowerCase() + "&y=&plot=short&r=json", data => {
 			arr = [];
-			const poster = data.Poster === 'N/A' ? 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvLE-IihC94Yf8QrtQCH_DZRN7o4P4t9FPnPM96SneH6_gEHCkvg' : data.Poster;
 			arr.push("<a target='_blank' href='http://www.imdb.com/title/" + data.imdbID + "' class='fl w-50 w-25-l link overflow-hidden'>");
 			arr.push("<div class='ba b--black-10 pa2 grow'>");
 			arr.push("<div class='grow aspect-ratio--4x6' style='background: url(" + poster + ") no-repeat center center; background-size: cover;'>");
@@ -26,15 +26,42 @@ $(document).ready(() => {
 },{"./series.json":2}],2:[function(require,module,exports){
 module.exports={
 	"series" : [
-							"Dexter",
-							"Game of Thrones",
-							"Mr Robot",
-							"How to get away with murder",
-							"Stranger Things",
-							"Quantico",
-							"Narcos",
-							"Silicon Valley",
-							"Friends",
+							{
+								"name": "Dexter",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_SX300.jpg"
+							},
+							{
+								"name": "Game of Thrones",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5OTQ1MTY5Nl5BMl5BanBnXkFtZTgwMjM3NzMxODE@._V1_SX300.jpg"
+							},
+							{
+								"name": "Friends",
+								"poster": "http://stuffpoint.com/friends/image/260868-friends-friends-poster.jpg"
+							},
+							{
+								"name": "Mr Robot",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYzMDE2MzI4MF5BMl5BanBnXkFtZTgwNTkxODgxOTE@._V1_SX300.jpg"
+							},
+							{
+								"name": "How to get away with murder",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTMzNDEzNTcwMV5BMl5BanBnXkFtZTgwMjc5Mjg5NjE@._V1_SX300.jpg"
+							},
+							{
+								"name": "Stranger Things",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_SX300.jpg"
+							},
+							{
+								"name": "Quantico",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2NjU1NTkyMl5BMl5BanBnXkFtZTgwMzk5Mjg5NjE@._V1_SX300.jpg"
+							},
+							{
+								"name": "Narcos",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0ODQ4NDg2OF5BMl5BanBnXkFtZTgwNzczNTE4OTE@._V1_SX300.jpg"
+							},
+							{
+								"name": "Silicon Valley",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNTUzNzIxM15BMl5BanBnXkFtZTgwMzQ1NTk2ODE@._V1_SX300.jpg"
+							}
 						]
 }
 
