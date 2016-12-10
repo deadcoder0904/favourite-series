@@ -4,7 +4,7 @@
 
 # Screenshot
 
-![Awesome Series](http://imgur.com/wCDMQ7K.png)
+![Awesome Series](http://imgur.com/R8AJR3Y.png)
 
 ## License
 
