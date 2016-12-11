@@ -51,8 +51,8 @@ module.exports={
 								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_SX300.jpg"
 							},
 							{
-								"name": "Quantico",
-								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2NjU1NTkyMl5BMl5BanBnXkFtZTgwMzk5Mjg5NjE@._V1_SX300.jpg"
+								"name": "Breaking Bad",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0ODYzODc0OV5BMl5BanBnXkFtZTgwMDk3OTcyMDE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg"
 							},
 							{
 								"name": "Narcos",
@@ -61,6 +61,10 @@ module.exports={
 							{
 								"name": "Silicon Valley",
 								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNTUzNzIxM15BMl5BanBnXkFtZTgwMzQ1NTk2ODE@._V1_SX300.jpg"
+							},
+							{
+								"name": "Quantico",
+								"poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2NjU1NTkyMl5BMl5BanBnXkFtZTgwMzk5Mjg5NjE@._V1_SX300.jpg"
 							}
 						]
 }
